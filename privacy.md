@@ -173,7 +173,9 @@ Ballpark:
 
 Synced weight measurements are cached locally on your device so Ballpark can show trends without repeatedly requesting your complete HealthKit history.
 
-Turning off weight sync stops Ballpark from requesting new weight measurements, but it does not currently delete weight measurements that were already cached locally. You can remove Ballpark's locally stored weight cache by deleting the app from your device. Removing the local cache does not delete the original measurements from Apple Health.
+Turning off weight sync stops Ballpark from requesting new weight measurements, but does not delete measurements already cached locally. The cached measurements remain on your device until you use **Delete Synced Weight Data** in Settings or uninstall Ballpark. Removing Ballpark's local cache does not delete the original measurements from Apple Health.
+
+Each time weight sync runs, Ballpark reconciles its local cache with the Apple Health weight measurements currently available to the app. If an available measurement was deleted from Apple Health, its cached copy is removed from Ballpark during the next successful sync. If HealthKit access is restricted, Ballpark can reconcile only the measurements Apple Health makes available to it.
 
 You can revoke Ballpark's access to HealthKit at any time in the Health app or iOS Settings. Revoking access prevents future access but does not automatically remove information previously cached by Ballpark.
 
@@ -260,7 +262,7 @@ Withdrawal does not affect processing that was completed before consent was with
 
 You can stop future weight syncing from Ballpark's Settings and revoke HealthKit permission through Apple Health or iOS Settings.
 
-Locally cached weight measurements remain on the device after syncing is turned off. They can currently be removed by deleting Ballpark from the device.
+Locally cached weight measurements remain on the device after syncing is turned off. You can permanently remove them using **Delete Synced Weight Data** in Settings or by uninstalling Ballpark. This deletes only Ballpark's cache and does not change the original data in Apple Health. A later sync can import measurements that remain available in Apple Health again.
 
 ### Complete local deletion
 
