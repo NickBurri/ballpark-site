@@ -1,6 +1,9 @@
 # Ballpark
 
-Ballpark is a meal and macro tracking app for iPhone.
+Ballpark is a simple meal, calorie, and macro tracking app for iPhone.
 
+- [Support](support)
 - [Privacy Policy](privacy)
-- Support: ballparkmacrotracker@icloud.com
+
+For questions or feedback, contact  
+[ballparkmacrotracker@icloud.com](mailto:ballparkmacrotracker@icloud.com).
